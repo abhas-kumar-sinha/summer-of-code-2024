@@ -318,7 +318,7 @@ input[type="email"]:-webkit-autofill {
     }
 
     #login-wrapper{
-        width: 100%;
+        width: 100vw;
         height: 70vh;
         padding: 0;
         padding-top: 5.5vw;
@@ -423,7 +423,7 @@ input[type="email"]:-webkit-autofill {
     }
     
     #desc-wrapper{
-        width: 100%;
+        width: 100vw;
         height: 35vh;
         padding: 2.5vh 0 5vh 6vh;
     }
