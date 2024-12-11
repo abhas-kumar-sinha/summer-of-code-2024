@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:wght@300;400;500;600;700&display=swap');
 
 /* defining variables for global scope */
 :root{
@@ -317,224 +318,131 @@ input[type="email"]:-webkit-autofill {
     }
 
     #login-wrapper{
-        width: 46.5%;
-        padding: 5.5vw 0 5vw 6.25vw;
+        width: 100%;
+        height: 70vh;
+        padding: 0;
+        padding-top: 5.5vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
     #login-wrapper .logo{
-        font-size: 2.2vw;
+        font-size: 3vh;
+        margin-bottom: 1vh;
     }
     
     #login-wrapper p{
-        color: var(--font-color);
-        font-weight: 700;
-        line-height: 4vw;
+        font-family: "Cedarville Cursive", cursive;
+        line-height: 3vh;
     }
     
     .intro-content{
-        margin: 6.5vw 0 4vw 0;
-        font-size: 2.55vw;
-        letter-spacing: 0.05vw;
+        margin-top: 2vh;
+        font-size: 2.55vh;
+        letter-spacing: 0.05vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    
-    fieldset{
-        border: none;
-    }
-    
-    ul{
-        list-style: none;
-    }
-    
+
     .email-section-head{
-        color: #9747ff;
-        font-size: 1.25vw;
-        margin-bottom: 0.5vw;
-        margin-top: 1vw;
+        font-size: 1.25vh;
+        margin-bottom: 0.5vh;
+        margin-top: 3vh;
     }
     
     .input-div{
-        height: 5.1vw;
-        width: 38vw;
-        border: 1.5px solid var(--form-field);
+        height: 5.1vh;
+        width: 38vh;
+        margin-bottom: 1vh;
     }
     
     .line-div{
-        height: 5vw;
-        width: 37.9vw;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1vw 1.5vw;
+        height: 5vh;
+        width: 37.9vh;
+        padding: 1vh 1.5vh;
         border-left: 3px solid #3751fe;
     }
     
     .form-label{
-        color: #5f5e5e;
-        font-weight: 400;
-        font-size: 1.25vw;
-        margin-top: -0.1vw;
+        font-size: 1.25vh;
+        margin-top: -0.1vh;
     }
     
     .form-input{
-        height: 2.2vw;
-        font-size: 1.3vw;
-        font-weight: 500;
-        color: var(--font-color);
-        letter-spacing: 0.05vw;
-        margin-top: 0.2vw;
-        border: none;
-        outline: none;
-    }
-    
-    .email-div:hover{
-        border: 1.5px solid transparent;
-        outline: 2px solid #9747ff;
-    }
-    
-    .password-div:hover{
-        border: 1.5px solid transparent;
-        outline: 2px solid #0c8ce9;
+        height: 2.2vh;
+        font-size: 1.3vh;
+        letter-spacing: 0.05vh;
+        margin-top: 0.2vh;
     }
     
     .forgot-pass-div{
-        width: 38vw;
-        margin-top: 1.75vw;
-        padding-left: 2vw;
-        color: #636363;
-        cursor: pointer;
+        width: 38vh;
+        margin-top: 3vh;
+        padding-left: 0.5vh;
+        font-size: 1.9vh;
     }
-    
-    .forgot-pass{
-        text-decoration: none;
-        transition: 0.2s;
-    }
-    
+
     #remember-me{
-        margin-right: 0.6vw;
-        cursor: pointer;
+        margin-right: 0.1vw;
     }
     
     .remember-me-in{
-        margin-right: 15vw;
-        cursor: pointer;
-    }
-    
-    .features-hover:hover{
-        scale: 1.03;
-        color: #3751fe;
+        margin-right: 6vh;
     }
     
     .buttons{
-        margin-top: 5vw;
-        position: relative;
+        margin-top: 4vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
     .btn{
-        height: 3.8vw;
-        width: 9vw;
-        margin-right: 2vw;
-        font-size: 1.35vw;
-        background-color: transparent;
-        color: var(--font-color);
-        border: 1.35px solid var(--font-color);
-        cursor: pointer;
-        transition: 0.2s ease;
+        height: 5vh;
+        width: 12vh;
+        margin-right: 2vh;
+        font-size: 1.8vh;
     }
-    
-    .active-btn{
-        background-color: var(--font-color);
-        color: white;
-    }
-    
-    .btn:hover{
-        scale: 1.03;
-        box-shadow: 8px 8px rgba(0, 0, 255, .2);
-    }
-    
+
     .other-login-options{
-        margin: 5vw 0;
-        width: 38vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 3vw;
-    
-        a{
-            text-decoration: none;
-            color: #3751fe;
-            font-weight: 600;
-        }
+        margin: 5vh 0;
+        width: 38vh;
+        height: 3vh;
     }
     
     .other-login-head{
-        color: #636363;
+        font-size: 1.9vh;
     }
     
     .login-options-links{
-        width: 25vw;
-        margin-right: 1vw;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+        width: 25vh;
+        margin-right: 1vh;
+        font-size: 1.7vh;
     }
     
     #desc-wrapper{
-        width: 53.5%;
-        background-color: #f4f4f4;
-        padding: 5.5vw 0 5vw 6.25vw;
+        width: 100%;
+        height: 35vh;
+        padding: 2.5vh 0 5vh 6vh;
     }
     
     .nav-bar{
-        height: 2.75vw;
-        width: 67.5%;
-        font-size: 1.65vw;
-        display: flex;
-        justify-content: space-between;
-        color: #636363;
-        margin-left: 3.6vw;
-        margin-top: 0.4vw;
+        height: 2.75vh;
+        font-size: 1.65vh;
+        margin-left: 3.6vh;
+        margin-top: 0.4vh;
     }
     
     .nav-options{
-        padding: 0.2vw;
-        height: 100%;
-        cursor: pointer;
+        padding: 0.2vh;
     }
-    
-    .nav-active{
-        border-bottom: 3.5px solid #657bec;
-    }
-    
+
     .swipeable-content{
-        height: 31vw;
-        width: 52.8vw;
-        margin-top: 5.5vw;
-        margin-left: -6.25vw;
-        display: flex;
-        overflow-y: hidden;
-    }
-    
-    .swipeable-content::-webkit-scrollbar{
-        display: none;
-    }
-    
-    /* customising the body scrollbar  */
-    ::-webkit-scrollbar {
-        width: 8px;
-    }
-    
-    ::-webkit-scrollbar-track {
-        background: transparent; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-        background:#707070; 
-        border-radius: 10px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-        opacity: 0.5; 
+        height: 23vh;
+        width: 52.8vh;
+        margin-left: -6.25vh;
     }
     
     /* slider */
@@ -556,7 +464,7 @@ input[type="email"]:-webkit-autofill {
     }
     
     .content-img{
-        height: 31vw;
+        height: 23vh;
         width: 0;
         background-size: contain;
         background-position: center;
@@ -564,11 +472,11 @@ input[type="email"]:-webkit-autofill {
         flex-shrink: 0;
         position: absolute;
         transition: 0.3s;
-        margin-left: 52.8vw;
+        margin-left: 52.8vh;
     }
     
     .is-active-navbar{
-        width: 52.8vw;
+        width: 52.8vh;
         margin: 0;
     }
     
@@ -581,24 +489,14 @@ input[type="email"]:-webkit-autofill {
       color: #3751fe !important; /* Ensures text color is visible */
       transition: background-color 5000s ease-in-out 0s !important;
     }
-    
-    /* underline effect on hover */
-    .hover-underline{
-        position: relative;
-    }
-    
-    .hover-underline::after{
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        width: 0;
-        height: 2px;
-        background-color: #3751fe;
-        transition: width 0.2s ease;
-    }
-    
-    .hover-underline:hover::after{
-        width: 100%;
-    }
+
+      /* Remove hover effect styles */
+  .hover-class:hover, 
+  button:hover, 
+  a:hover {
+    background-color: initial;
+    color: initial;
+    /* Add other hover styles to reset */
+  }
+
 }
