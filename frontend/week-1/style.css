@@ -339,7 +339,7 @@ input[type="email"]:-webkit-autofill {
     
     .intro-content{
         margin-top: 2vh;
-        font-size: 2.55vh;
+        font-size: 2.6vh;
         letter-spacing: 0.05vh;
         display: flex;
         flex-direction: column;
@@ -441,7 +441,7 @@ input[type="email"]:-webkit-autofill {
 
     .swipeable-content{
         height: 23vh;
-        width: 52.8vh;
+        width: 100vw;
         margin-left: -6.25vh;
     }
     
@@ -476,7 +476,7 @@ input[type="email"]:-webkit-autofill {
     }
     
     .is-active-navbar{
-        width: 52.8vh;
+        width: 100vw;
         margin: 0;
     }
     
