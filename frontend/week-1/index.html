@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- this is a page wrapper -->
+    <div id="main">
+        <!-- this is the login form wrapper -->
+        <div id="login-wrapper">
+            <div class="logo">
+                <p>Digital</p>
+            </div>
+
+            <form>
+                <legend class="intro-content">
+                    <p>Welcome Back!</p>
+                    <p>Please Login into your account.</p>
+                </legend>
+
+                <fieldset>
+                    <ul>
+                        <li class="email-section-head">
+                            &#10070; Email Section
+                        </li>
+                    </ul>
+
+                    <!-- login field -->
+
+                    <div class="email-login-wrapper">
+                        <div class="input-div email-div">
+                            <div class="line-div">
+                                <label class="form-label" for="email">Email Address</label>
+                                <input required class="form-input" type="email"  name="email" id="email">
+                            </div>
+
+                        </div>
+                        <div class="input-div password-div">
+                            <div  style="border: none;" class="line-div">
+                                <label class="form-label" for="password">Password</label>
+                                <input required class="form-input" type="text" minlength="8" name="password" id="password">
+                            </div>
+                        </div>
+
+                        <div class="forgot-pass-div">
+                            <input type="checkbox" id="remember-me" class="features-hover">
+                            <label for="remember-me" class="remember-me-in hover-underline features-hover">Remember Me</label>
+                            <a class="forgot-pass hover-underline features-hover">Forgot Password?</a>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="btn active-btn" id="login-btn">Login</button>
+                            <button class="btn" id="signup-btn">Sign Up</button>
+                        </div>
+
+                        <div class="other-login-options">
+                            <span class="other-login-head">Or login with</span>
+                            <div class="login-options-links">
+                                <a class="hover-underline" style="padding: 0 0.1vw;" href="#">Facebook</a>
+                                <a class="hover-underline" style="padding: 0 0.1vw;" href="#">LinkedIn</a>
+                                <a class="hover-underline" style="padding: 0 0.1vw;" href="#">Google</a>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- this is the description wrapper -->
+        <div id="desc-wrapper">
+            <div class="nav-bar">
+                <a id="home" class="nav-options nav-active">Home</a>
+                <a id="about-us" class="nav-options">About Us</a>
+                <a id="blog" class="nav-options">Blog</a>
+                <a id="pricing" class="nav-options">Pricing</a>
+            </div>
+
+            <!-- slider -->
+            <div class="swipeable-content">
+                <div id="home" class="content-img content-home is-active-navbar"></div>
+                <div id="about-us" class="content-img content-about-us"></div>
+                <div id="blog" class="content-img content-blog"></div>
+                <div id="pricing" class="content-img content-pricing"></div>
+            </div>
+        </div>
+        
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
