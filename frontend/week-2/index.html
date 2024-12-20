@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Dashboard</title>
+        <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+        crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./style.css">
+        <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
+    </head>
+  
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-white px-3 py-3 pb-3 border-bottom">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img src="./assets/favicon.png" alt="Shop Name" width="45" height="45">
+            </a>
+            <div class="text-wrapper">
+              <p class="fs-3 space-letters">SHOP NAME</p>
+              <p class="lh-1 smaller-text">Day, Date (OPTIONAL)</p>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="d-flex ms-auto" role="search">
+                <button class="btn-color-light btn px-4 py-2 fs-5 rounded-4 me-4" type="button"></button>
+                <button class="btn-color btn px-5 py-2 fs-5 rounded-4 border-black" type="submit">LOGOUT</button>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="herosection-wrapper d-flex">
+          <!-- aside -->
+          <div class="aside-wrapper border-top p-4">
+          <img src="./assets/favicon.png" class="rounded-circle mt-1 mb-3 mx-5 opacity-75" alt="Profile Picture" style="height: 13vw; width: 13vw;">
+
+          <p class="fs-2 text-center text-color mb-1">NAME</p>
+          <p class="fs-5 text-center element-color text-lowercase">EMAIL ID (IN SMALL)</p>
+
+          <div class="role mt-5 mb-5 m-auto rounded-pill element-bg">
+            <p class="fs-3 text-center fw-semibold p-1">CASHIER</p>
+          </div>
+
+          <p class="text-center pt-5 fs-6 text-secondary">Display current time*</p>
+          </div>
+
+          <!-- hero-section -->
+           <div class="hero-section p-4 d-flex gap-3">
+            <div class="form-wrapper rounded-4 px-5 bg-white h-100" style="width: 68%;">
+              <p class="fs-1 text-color mt-4 mb-3 font-monospace text-uppercase">Customer Details</p>
+              <hr class="mb-4">
+
+              <!-- form -->
+              <form action="" method="GET" id="contact-form-submit">
+                <div class="mb-4 row">
+                  <label for="inputName" class="col-sm-4 col-form-label fs-4 element-color space-letters text-uppercase">Name</label>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control form-input-bg mt-2" id="inputName">
+                  </div>
+                </div>
+
+                <div class="mb-4 row">
+                  <label for="inputPhone" class="col-sm-4 col-form-label fs-4 element-color space-letters text-uppercase">Mobile*</label>
+                  <div class="col-sm-8">
+                    <input type="number" maxlength="10" class="form-control form-input-bg mt-2" id="inputPhone" required>
+                  </div>
+                </div>
+
+                <div class="mb-4 row">
+                  <label for="inputAddress" class="col-sm-4 col-form-label fs-4 element-color space-letters text-uppercase">Address</label>
+                  <div class="col-sm-8">
+                    <textarea class="form-control form-input-bg mt-2" id="exampleFormControlTextarea1" rows="4"></textarea>
+                  </div>
+                </div>
+
+                <div class="submit-wrapper mt-4 w-100 d-flex align-items-end text-secondary">
+                  <span class="fs-6 mt-3">
+                    (*) marked fields are mandatory
+                  </span>
+                  <button type="submit" class="btn text-uppercase ms-auto mt-3 px-5 fs-5 btn-color hover-opacity">Go</button>
+                </div>
+              </form>
+            </div>
+
+              <div class="hero-section-aside rounded-4 h-100 d-flex flex-column align-items-center justify-content-center" style="width: 32%; background-color: var(--element-color); opacity: 0.6;">
+                <p class="text-secondary">Enter customer details</p>
+                <p class="text-secondary" style="margin-top: -1rem;">to proceed to checkout</p>
+            </div>
+          </div>
+        </div>
+        
+        <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous">
+        </script>
+        <script src="./script.js"></script>
+    </body>
+</html>

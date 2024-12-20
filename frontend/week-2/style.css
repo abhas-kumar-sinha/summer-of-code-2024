@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    background-color: #f4f4f4;
+}
+
+/* variables */
+:root{
+    --element-color: #ff7a28;
+    --transition-main: all 0.2s ease;
+    --font-color: #474d60;
+    --text-color: #ff6100;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.text-color{
+    color: var(--text-color);
+}
+
+.element-color{
+    color: var(--element-color);
+}
+
+.element-bg{
+    background-color: var(--element-color);
+    color: #fff;
+}
+
+.space-letters{
+    letter-spacing: 0.1rem;
+}
+
+.form-input-bg{
+    background-color: #f3f3f3;
+}
+
+.hover-opacity{
+    opacity: 0.6;
+}
+
+.hover-opacity:hover{
+    scale: 1.02;
+    opacity: 1;
+}
+
+/* navbar */
+.btn-color{
+    background-color: var(--element-color);
+    color: white;
+    transition: var(--transition-main);
+}
+
+.btn-color:hover{
+    background-color: var(--element-color);
+    scale: 1.05;
+    color: white;
+}
+
+.text-wrapper{
+    height: 1vh;
+    margin-top: -0.8rem;
+    p{
+        line-height: 0.6rem;
+        color: var(--font-color);
+    }
+    .smaller-text{
+        font-size: 0.7rem;
+    }
+}
+
+.btn-color-light{
+    background-color: var(--element-color);
+    color: white;
+    transition: var(--transition-main);
+    border-color: black;
+    opacity: 0.3;
+}
+
+.btn-color-light:hover{
+    background-color: var(--element-color);
+    scale: 1.05;
+    color: white;
+}
+
+/* aside */
+.aside-wrapper{
+    height: 86vh;
+    width: 25%;
+    background-color: #fff;
+}
+
+.role{
+    width: 15rem;
+}
+
+/* hero-section */
+.hero-section{
+    height: 86vh;
+    width: 100%;
+}
+
+hr{
+    border: 1px solid var(--text-color);
+}
