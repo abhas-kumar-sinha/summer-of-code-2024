@@ -1,0 +1,86 @@
+:root{
+    --item-text-color: #0c085c;
+}
+
+.item-text-color{
+    color: var(--item-text-color);
+}
+
+.navBarCheckout{
+    width: 68%;
+}
+
+.CheckoutAside{
+    width: 32%;
+    height: 100vh;
+    border-left: 1px solid grey;
+}
+
+.itemsList{
+    height: 65%;
+    overflow-y: scroll;
+}
+
+.placeOrder{
+    box-shadow: 0 2px 100px #ffb78b;
+}
+
+.ItemsAside{
+    height: 86vh;
+    width: 27%;
+    border-right: 1px solid grey;
+}
+
+.itemsAsideHr{
+    border-color: var(--item-text-color);
+}
+
+.items-wrapper{
+    height: 75vh;
+}
+
+.categories{
+    height: 10%;
+    cursor: pointer;
+}
+
+.categories-h-line{
+    width: 4%;
+    background: transparent;
+}
+
+.itemActive{
+    background-color: #d9d9d9;
+}
+
+.itemActive .categories-h-line{
+    background-color: var(--text-color);
+}
+
+.itemActive p{
+    color: #ff7a28;
+}
+
+.itemCard-holder{
+    height: 86vh;
+    background-color: #f4f4f4;
+    overflow-y: scroll;
+}
+
+.cardMy{
+    height: 150px;
+    margin-bottom: 0.9rem;
+}
+
+.cardCheck{
+    height: 85px;
+    width: 87%;
+    margin-left: 0.25vw;
+    border: 1.5px solid #ff7a28;
+    border-left: 17px solid #ff7a28;
+}
+
+.QtyBar{
+    width: 35%;
+    margin-top: -1vw;
+}
